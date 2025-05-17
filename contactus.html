@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTalk English - Contact Us</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="dark:bg-slate-900 dark:text-white bg-gray-300">
+    <header>
+        <nav class="flex w-full md:justify-around justify-between items-center bg-indigo-600 p-2.5">
+            <div id="logo" class="flex gap-2 justify-center items-center">
+                <a href="" class="flex gap-2 justify-center items-center"><img src="logo.jpg" alt="Logo" class="h-10
+                rounded-2xl">
+                    <h1 class="text-3xl text-white">TechTalk English</h1>
+                </a>
+            </div>
+            <ul class="md:flex hidden gap-3">
+                <a href="\index.html"><li
+                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                    Home</li></a>
+                <a href="\blog.html"><li
+                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                    Blog</li></a>
+                <a href="\contactus.html"><li
+                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                    Contact Us</li></a>
+                <a href="signin.html"><li
+                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                    Sign In</li></a>
+                <a href="\signup.html"><li
+                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                    Sign Up</li></a>
+            </ul>
+            <div id="hm" class="text-3xl select-none md:hidden cursor-pointer">&#8801</div>
+        </nav>
+        <div id="hmd"
+            class="bg-slate-300 flex justify-center rounded cursor-pointer hidden select-none items-center gap-2 m-2 p-2 flex-col">
+            <a href="\index.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Home</li></a>
+            <a href="\blog.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Blog</li></a>
+            <a href="contactus.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Contact Us</li></a>
+            <a href="signin.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign In</li></a>
+            <a href="signup.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign Up</li></a>
+        </div>
+    </header>
+    <main>
+        <div id="contactus" class="flex w-full bg-indigo-600 m-14 md:w-[40vw] flex-col justify-center py-25 rounded items-center mx-auto">
+            <h1 class="text-4xl mb-14 dark:text-white">Contact Us</h1>
+            <div id="username" class="flex flex-col">
+                <label class="text-gray-200 mt-5" for="name">UserName:</label>
+                <input type="text" name="name" placeholder="Enter your UserName" class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded">
+            </div>
+            <div id="email" class="flex flex-col">
+                <label class="text-gray-200 mt-5" for="email">Email:</label>
+                <input type="email" placeholder="Enter your Email" name="email" class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded">
+            </div>
+            <div id="txt" class="flex flex-col">
+                <label class="text-gray-200 mt-5" for="message">Message:</label>
+                <textarea placeholder="Enter your Message" name="message" id="textarea" class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded"></textarea>
+            </div>
+            <button class="bg-sky-600 mt-15 py-4 px-6 rounded cursor-pointer hover:bg-amber-500 hover:shadow shadow-amber-600">Contact Us</button>
+        </div>
+    </main>
+    <footer class="bg-slate-700 w-full h-auto">
+        <div class="cont flex justify-around">
+            <div id="fot" class="flex flex-col md:flex-row justify-center items-center">
+                <a href="" class="flex justify-center items-center"><img src="logo.jpg" class="h-20 m-6 rounded-2xl" alt="Logo"></a>
+                <div id="page" class="flex justify-center items-center flex-col gap-2">
+                    <h1 class="text-center mt-4">Our More Pages</h1>
+                    <ul class="flex gap-2 flex-col m-5">
+                        <a href="\index.html">
+                            <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Home</li>
+                        </a>
+                        <a href="\blog.html">
+                            <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Blog</li>
+                        </a>
+                        <a href="contactus.html">
+                            <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Contact Us</li>
+                        </a>
+                        <a href="signin.html">
+                            <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign In</li>
+                        </a>
+                        <a href="signup.html">
+                            <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign Up</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="social my-auto text-center">
+                <div>
+                    <h1 class="text-3xl m-2.5 text-amber-500">Our SocialMedia Pages</h1>
+                </div>
+                <div class="youtube">
+                    <a href="youtube.com">YouTube</a>
+                </div>
+                <div class="facebook">
+                    <a href="facebook.com">FaceBook</a>
+                </div>
+                <div class="intagram">
+                    <a href="instagram.com">InstaGram</a>
+                </div>
+            </div>
+        </div>
+        <p class="dark:text-white text-center select-none">© 2025 TechTalk English. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
