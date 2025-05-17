@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="output.css">
 </head>
+
 <body class="dark:bg-slate-900 dark:text-white bg-gray-300">
-    <header>
+    <header class="sticky top-0">
         <nav class="flex w-full md:justify-around justify-between items-center bg-indigo-600 p-2.5">
             <div id="logo" class="flex gap-2 justify-center items-center">
                 <a href="" class="flex gap-2 justify-center items-center"><img src="logo.jpg" alt="Logo" class="h-10
@@ -17,55 +19,82 @@
                 </a>
             </div>
             <ul class="md:flex hidden gap-3">
-                <a href="\index.html"><li
-                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
-                    Home</li></a>
-                <a href="\blog.html"><li
-                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
-                    Blog</li></a>
-                <a href="\contactus.html"><li
-                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
-                    Contact Us</li></a>
-                <a href="signin.html"><li
-                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
-                    Sign In</li></a>
-                <a href="\signup.html"><li
-                    class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
-                    Sign Up</li></a>
+                <a href="\index.html">
+                    <li
+                        class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                        Home</li>
+                </a>
+                <a href="\blog.html">
+                    <li
+                        class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                        Blog</li>
+                </a>
+                <a href="\contactus.html">
+                    <li
+                        class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                        Contact Us</li>
+                </a>
+                <a href="signin.html">
+                    <li
+                        class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                        Sign In</li>
+                </a>
+                <a href="\signup.html">
+                    <li
+                        class="select-none shadow shadow-amber-500 flex justify-center items-center p-3 hover:bg-amber-500 cursor-pointer rounded-[6px] transition-all duration-500 ease-out">
+                        Sign Up</li>
+                </a>
             </ul>
             <div id="hm" class="text-3xl select-none md:hidden cursor-pointer">&#8801</div>
         </nav>
         <div id="hmd"
             class="bg-slate-300 flex justify-center rounded cursor-pointer hidden select-none items-center gap-2 m-2 p-2 flex-col">
-            <a href="\index.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Home</li></a>
-            <a href="\blog.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Blog</li></a>
-            <a href="contactus.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Contact Us</li></a>
-            <a href="signin.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign In</li></a>
-            <a href="signup.html"><li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign Up</li></a>
+            <a href="\index.html">
+                <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Home</li>
+            </a>
+            <a href="\blog.html">
+                <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Blog</li>
+            </a>
+            <a href="contactus.html">
+                <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Contact Us</li>
+            </a>
+            <a href="signin.html">
+                <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign In</li>
+            </a>
+            <a href="signup.html">
+                <li class="list-none rounded cursor-pointer select-none p-1.5 bg-amber-500">Sign Up</li>
+            </a>
         </div>
     </header>
     <main>
-        <div id="contactus" class="flex w-full bg-indigo-600 m-14 md:w-[40vw] flex-col justify-center py-25 rounded items-center mx-auto">
+        <div id="contactus"
+            class="flex w-full bg-indigo-600 m-14 md:w-[40vw] flex-col justify-center py-25 rounded items-center mx-auto">
             <h1 class="text-4xl mb-14 dark:text-white">Contact Us</h1>
             <div id="username" class="flex flex-col">
                 <label class="text-gray-200 mt-5" for="name">UserName:</label>
-                <input type="text" name="name" placeholder="Enter your UserName" class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded">
+                <input type="text" name="name" placeholder="Enter your UserName"
+                    class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded">
             </div>
             <div id="email" class="flex flex-col">
                 <label class="text-gray-200 mt-5" for="email">Email:</label>
-                <input type="email" placeholder="Enter your Email" name="email" class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded">
+                <input type="email" placeholder="Enter your Email" name="email"
+                    class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded">
             </div>
             <div id="txt" class="flex flex-col">
                 <label class="text-gray-200 mt-5" for="message">Message:</label>
-                <textarea placeholder="Enter your Message" name="message" id="textarea" class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded"></textarea>
+                <textarea placeholder="Enter your Message" name="message" id="textarea"
+                    class="placeholder:text-gray-400 text-gray-200 focus:outline-2 outline-amber-400 w-[250px] p-2 bg-gray-500 rounded"></textarea>
             </div>
-            <button class="bg-sky-600 mt-15 py-4 px-6 rounded cursor-pointer hover:bg-amber-500 hover:shadow shadow-amber-600">Contact Us</button>
+            <button
+                class="bg-sky-600 mt-15 py-4 px-6 rounded cursor-pointer hover:bg-amber-500 hover:shadow shadow-amber-600">Contact
+                Us</button>
         </div>
     </main>
     <footer class="bg-slate-700 w-full h-auto">
         <div class="cont flex justify-around">
             <div id="fot" class="flex flex-col md:flex-row justify-center items-center">
-                <a href="" class="flex justify-center items-center"><img src="logo.jpg" class="h-20 m-6 rounded-2xl" alt="Logo"></a>
+                <a href="" class="flex justify-center items-center"><img src="logo.jpg" class="h-20 m-6 rounded-2xl"
+                        alt="Logo"></a>
                 <div id="page" class="flex justify-center items-center flex-col gap-2">
                     <h1 class="text-center mt-4">Our More Pages</h1>
                     <ul class="flex gap-2 flex-col m-5">
@@ -87,18 +116,42 @@
                     </ul>
                 </div>
             </div>
-            <div class="social my-auto text-center">
+            <div class="social flex flex-col my-auto text-center">
                 <div>
                     <h1 class="text-3xl m-2.5 text-amber-500">Our SocialMedia Pages</h1>
                 </div>
                 <div class="youtube">
-                    <a href="youtube.com">YouTube</a>
+                    <a href="youtube.com"><a href="https://www.youtube.com/@TECHTALKENGLISH529"
+                            class="flex justify-center items-center m-5" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 24 24"
+                                fill="red">
+                                <path
+                                    d="M19.615 3.184c-1.657-.683-8.387-.683-8.387-.683s-6.73 0-8.387.683C1.266 3.91 0 6.03 0 8.643v6.714c0 2.613 1.266 4.732 2.841 5.459 1.657.683 8.387.683 8.387.683s6.73 0 8.387-.683C22.734 20.09 24 17.97 24 15.357V8.643c0-2.613-1.266-4.733-4.385-5.459zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </a>
                 </div>
                 <div class="facebook">
-                    <a href="facebook.com">FaceBook</a>
+                    <a href="facebook.com"><a href="https://web.facebook.com/profile.php?id=61561640999130"
+                            class="flex justify-center items-center m-5" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="#1877F2">
+                                <path
+                                    d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691V11.01h3.13V8.414c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.696h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z" />
+                            </svg>
+                        </a>
+                    </a>
                 </div>
                 <div class="intagram">
-                    <a href="instagram.com">InstaGram</a>
+                    <a href="instagram.com"><a href="https://www.instagram.com/abdullah_developer_918/"
+                            class="flex justify-center items-center m-5" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="#E4405F">
+                                <path
+                                    d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.055 1.972.24 2.43.407a4.92 4.92 0 0 1 1.78 1.16 4.93 4.93 0 0 1 1.16 1.78c.167.458.352 1.26.407 2.43.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.972-.407 2.43a4.92 4.92 0 0 1-1.16 1.78 4.93 4.93 0 0 1-1.78 1.16c-.458.167-1.26.352-2.43.407-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.972-.24-2.43-.407a4.92 4.92 0 0 1-1.78-1.16 4.93 4.93 0 0 1-1.16-1.78c-.167-.458-.352-1.26-.407-2.43C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.055-1.17.24-1.972.407-2.43a4.92 4.92 0 0 1 1.16-1.78 4.93 4.93 0 0 1 1.78-1.16c.458-.167 1.26-.352 2.43-.407C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.737 0 8.332.012 7.052.07 5.767.127 4.685.328 3.8.675c-.91.36-1.693.84-2.475 1.623A7.806 7.806 0 0 0 .675 3.8C.328 4.685.127 5.767.07 7.052.012 8.332 0 8.737 0 12s.012 3.668.07 4.948c.057 1.285.258 2.367.605 3.252.36.91.84 1.693 1.623 2.475a7.806 7.806 0 0 0 2.475 1.623c.885.347 1.967.548 3.252.605C8.332 23.988 8.737 24 12 24s3.668-.012 4.948-.07c1.285-.057 2.367-.258 3.252-.605a7.806 7.806 0 0 0 2.475-1.623 7.806 7.806 0 0 0 1.623-2.475c.347-.885.548-1.967.605-3.252.058-1.28.07-1.685.07-4.948s-.012-3.668-.07-4.948c-.057-1.285-.258-2.367-.605-3.252a7.806 7.806 0 0 0-1.623-2.475A7.806 7.806 0 0 0 20.2.675c-.885-.347-1.967-.548-3.252-.605C15.668.012 15.263 0 12 0zM12 5.838A6.162 6.162 0 1 0 18.162 12 6.17 6.17 0 0 0 12 5.838zm0 10.162A3.998 3.998 0 1 1 16 12a3.998 3.998 0 0 1-4 4zm6.406-11.845a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z" />
+                            </svg>
+                        </a>
+                    </a>
                 </div>
             </div>
         </div>
@@ -106,4 +159,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
